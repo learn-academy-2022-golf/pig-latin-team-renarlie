@@ -33,8 +33,31 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
 
-    
+    //vowel functionality recognizes first letter is a vowel and adds -way to the end
+      //create a function called vowel
+        //takes a string that has a vowel as index[0]
+          //will concat -way to the end of the string
+      //return a string that has way attached to the end
 
+    //qu-functionality sees "qu" in the first syllable amd moves all the consonants to the end and adds "ay"
+      //create a function called quFirstSyllable
+        //use search built in method to find "qu" in the word
+          //use search to slice to remove first part of word
+          //create a variable to take into account of the index
+          // add to the add of the word with -ay
+      
+    //y-functionality sees "y" as the only vowel and moves all the consonants to the end with ay
+      //create a function that's called yVowel
+        //if no vowels except "y" appear then slice all the previous consonants to the end with "ay"
+        //eachWord.includes("a")===0 repeat for all vowels except "y"
+
+    //consonant functionality alot of consonants in the beginning.
+        //create a function of consonant
+          //find index of first vowel
+           //slice from the beginning of the vowel
+            //add all of the slice to the end with ay
+            
+      
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
