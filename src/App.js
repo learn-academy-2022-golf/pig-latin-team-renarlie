@@ -68,6 +68,12 @@ const App = () => {
         //if no vowels except "y" appear then slice all the previous consonants to the end with "ay"
         //eachWord.includes("a")===0 repeat for all vowels except "y"
 
+          else if (eachWord.includes("a","e","i","o","u") === false && eachWord.search("y") > 0)
+          { let sliced = eachWord.slice(0, eachWord.search("y"))
+          let endSlice = eachWord.slice(eachWord.search("y"), eachWord.length)
+          return endSlice.concat(sliced + "ay")}
+          
+
     //consonant functionality alot of consonants in the beginning.
         //create a function of consonant
           //find index of first vowel
@@ -77,7 +83,7 @@ const App = () => {
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
-
+    
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
     console.log("translatedWords:", translatedWords)
