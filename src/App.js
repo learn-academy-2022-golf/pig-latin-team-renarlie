@@ -39,7 +39,7 @@ const App = () => {
           //will concat -way to the end of the string
       //return a string that has way attached to the end
 
-      if (eachWord[0] === "a" || eachWord[0] === "e" || eachWord[0] === "i" || eachWord[0] === "o" || eachWord[0] === "u"){
+      if (eachWord[0] === vowelsArray[0]){
         return eachWord.concat("way")
       }
 
