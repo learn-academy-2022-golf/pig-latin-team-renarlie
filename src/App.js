@@ -32,6 +32,15 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+
+
+    //vowel functionality recognizes first letter is a vowel and adds -way to the end
+      //create a function called vowel
+        //takes a string that has a vowel as index[0]
+          //will concat -way to the end of the string
+      //return a string that has way attached to the end
+
+
       if (eachWord[0] === vowelsArray[0]){
         return eachWord.concat("way")
       }
@@ -44,6 +53,7 @@ const App = () => {
           //create a variable to take into account of the index
           // add to the add of the word with -ay
 
+
           // eachWord.indexOf(vowelsArray[1])
 
           else if(eachWord.search("qu") > -1 && eachWord.search("qu") < (eachWord.length/2)){
@@ -51,6 +61,7 @@ const App = () => {
               let endSlice = eachWord.slice(eachWord.search("qu")+2, eachWord.length)
               return endSlice.concat(sliced + "ay")
           }
+
       
     //y-functionality sees "y" as the only vowel and moves all the consonants to the end with ay
       //create a function that's called yVowel
@@ -62,7 +73,6 @@ const App = () => {
           //find index of first vowel
            //slice from the beginning of the vowel
             //add all of the slice to the end with ay
-    
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
