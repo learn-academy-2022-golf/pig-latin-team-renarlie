@@ -73,13 +73,18 @@ const App = () => {
           let endSlice = eachWord.slice(eachWord.search("y"), eachWord.length)
           return endSlice.concat(sliced + "ay")}
           
-
+          
     //consonant functionality alot of consonants in the beginning.
         //create a function of consonant
           //find index of first vowel
            //slice from the beginning of the vowel
             //add all of the slice to the end with ay
 
+
+            else {let sliced = eachWord.slice(0, eachWord.search(vowelsArray[0]))
+              let endSlice = eachWord.slice(eachWord.search(vowelsArray[0]), eachWord.length)
+              return endSlice.concat(sliced + "ay")
+            }
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
