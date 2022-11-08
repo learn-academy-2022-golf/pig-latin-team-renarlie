@@ -39,6 +39,10 @@ const App = () => {
           //will concat -way to the end of the string
       //return a string that has way attached to the end
 
+      if (eachWord[0] === "a" || eachWord[0] === "e" || eachWord[0] === "i" || eachWord[0] === "o" || eachWord[0] === "u"){
+        return eachWord.concat("way")
+      }
+
     //qu-functionality sees "qu" in the first syllable amd moves all the consonants to the end and adds "ay"
       //create a function called quFirstSyllable
         //use search built in method to find "qu" in the word
