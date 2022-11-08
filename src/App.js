@@ -5,7 +5,7 @@ import butcherPigImage from './assets/butcherPig.jpeg'
 const App = () => {
 
   // ACTION ITEM: to make the development process easier there are some preassigned words in the input field, when you are ready for your full user experience delete the test words passed to useState and pass an empty string
-  const [userInput, setUserInput] = useState("apple through queen squeal fry fluent")
+  const [userInput, setUserInput] = useState("")
   const [inputTranslated, setInputTranslated] = useState("")
 
   // ACTION ITEM: the "myPigLatinCodeHere" function is where you will put your logic to translate the sentence entered by the user into Pig Latin
@@ -68,7 +68,7 @@ const App = () => {
         //if no vowels except "y" appear then slice all the previous consonants to the end with "ay"
         //eachWord.includes("a")===0 repeat for all vowels except "y"
 
-          else if (eachWord.includes("a","e","i","o","u") === false && eachWord.search("y") > 0)
+          else if (eachWord.includes("a") === false && eachWord.includes("e") === false && eachWord.includes("i") === false && eachWord.includes("o") === false && eachWord.includes("u") === false && eachWord.search("y") > 0)
           { let sliced = eachWord.slice(0, eachWord.search("y"))
           let endSlice = eachWord.slice(eachWord.search("y"), eachWord.length)
           return endSlice.concat(sliced + "ay")}
@@ -99,7 +99,7 @@ const App = () => {
 
   // ACTION ITEM: this method restarts the game by setting the original state, when you are ready for your full user experience delete the test words in setUserInput and pass an empty string
   const restartGame = () => {
-    setUserInput("apple through queen squeal fry fluent")
+    setUserInput("")
     setInputTranslated("")
   }
 
@@ -119,7 +119,7 @@ const App = () => {
       <div className="body-container">
         <h1>Pig Latin Translator</h1>
         <img
-          src={butcherPigImage}
+          src="https://www.clipartmax.com/png/middle/80-806630_pig-cartoon-pig-transparent-background.png"
           alt="pig with butcher cut names in pig latin"
           className="butcher-pig-image"
         />
@@ -136,7 +136,7 @@ const App = () => {
           <button onClick={setUpPreventDefault}>Submit</button>
           <button onClick={restartGame}>Clear</button>
         </div>
-        <p>{inputTranslated}</p>
+        <p className="output">{inputTranslated}</p>
       </div>
       <footer>&copy; 2022 | Coded by: Your Names Here!</footer>
     </div>

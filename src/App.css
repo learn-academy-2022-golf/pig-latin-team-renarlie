@@ -1,17 +1,20 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
+  background-color: lightblue;
 }
 
 /* ---HEADER--- */
 
 h1 {
+  font-family: 'Rubik Bubbles', cursive;
   font-size: 4rem;
 }
 
 .butcher-pig-image {
   margin: 1rem;
-  width: 14rem;
+  width: 10rem;
+  border-style: solid;
 }
 
 /* ---BODY--- */
@@ -32,11 +35,13 @@ button {
 }
 
 .input-section {
-  background-color: grey;
+  background-color: lightpink;
   border-radius: .5rem;
   color: #fff;
   margin: 1rem;
   padding: 1rem;
+  border-style: solid;
+  border-color: black;
 }
 
 .user-input {
@@ -44,6 +49,7 @@ button {
   font-size: 1rem;
   height: 3rem;
   width: 30rem;
+  background-color: white;
 }
 
 /* ---FOOTER--- */
@@ -57,7 +63,7 @@ footer {
 
 @media only screen and (max-width: 650px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .user-input {
     font-size: 1rem;
@@ -65,5 +71,18 @@ footer {
     padding: 1rem;
     text-align: center;
     width: 90%;
+
   }
+}
+
+h4 {
+background-color: black
+}
+
+.output {
+  border-style: solid;
+  background-color: white;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: 1rem;
 }
