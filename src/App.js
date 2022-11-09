@@ -10,7 +10,7 @@ const App = () => {
 
   // ACTION ITEM: the "myPigLatinCodeHere" function is where you will put your logic to translate the sentence entered by the user into Pig Latin
   const myPigLatinCodeHere = () => {
-
+    
     // NO MODIFICATION NEEDED: the variable "arrayOfUserInput" will contain the text input from the user split into an array of words
     const arrayOfUserInput = userInput.split(" ")
     console.log("arrayOfUserInput:", arrayOfUserInput)
@@ -32,7 +32,6 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
-
 
     //vowel functionality recognizes first letter is a vowel and adds -way to the end
       //create a function called vowel
@@ -85,6 +84,7 @@ const App = () => {
               let endSlice = eachWord.slice(eachWord.search(vowelsArray[0]), eachWord.length)
               return endSlice.concat(sliced + "ay")
             }
+
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
@@ -111,7 +111,7 @@ const App = () => {
 
   // NO MODIFICATION NEEDED: this method takes the value of the input and saves it in state
   const handleInput = (e) => {
-    setUserInput(e.target.value)
+    setUserInput((e.target.value).toLowerCase())
   }
 
   return (
@@ -138,7 +138,7 @@ const App = () => {
         </div>
         <p className="output">{inputTranslated}</p>
       </div>
-      <footer>&copy; 2022 | Coded by: Your Names Here!</footer>
+      <footer>&copy; 2022 | Coded by: Renita and Charlie!</footer>
     </div>
   )
 }
