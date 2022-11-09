@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './App.css'
-import butcherPigImage from './assets/butcherPig.jpeg'
 
 const App = () => {
 
@@ -119,7 +118,7 @@ const App = () => {
       <div className="body-container">
         <h1>Pig Latin Translator</h1>
         <img
-          src="https://www.clipartmax.com/png/middle/80-806630_pig-cartoon-pig-transparent-background.png"
+          src="https://i.pinimg.com/originals/b2/6c/99/b26c998d89d23f06e315107f88927e9b.jpg"
           alt="pig with butcher cut names in pig latin"
           className="butcher-pig-image"
         />
